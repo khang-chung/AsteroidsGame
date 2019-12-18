@@ -54,6 +54,33 @@ class Spaceship extends Floater{
       vertex(xCorners[nI], yCorners[nI]);
     }
     endShape(CLOSE);
+    
+    beginShape();
+	    for (int nI = 0; nI < corners; nI++)
+	    {
+	      vertex(xCorners[nI], yCorners[nI]);
+	    }
+	    endShape(CLOSE);
+	    fill(255);
+	    corners = 4;
+		xCorners = new int[corners];
+		yCorners = new int[corners];
+
+		xCorners[0] = -10;
+		yCorners[0] = -10;
+		xCorners[1] = 16;
+		yCorners[1] = 0;
+		xCorners[2] = -10;
+		yCorners[2] = 10;
+		xCorners[3] = -4;
+		yCorners[3] = 0;
+		beginShape();
+	    for (int nI = 0; nI < corners; nI++)
+	    {
+	      vertex(xCorners[nI], yCorners[nI]);
+	    }
+	    endShape(CLOSE);
+
 
     if(isAccelerating == true){
     	noStroke();

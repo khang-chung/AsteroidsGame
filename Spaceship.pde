@@ -61,7 +61,7 @@ class Spaceship extends Floater{
 	      vertex(xCorners[nI], yCorners[nI]);
 	    }
 	    endShape(CLOSE);
-	    fill(255);
+	    fill(52, 204, 255);
 	    corners = 4;
 		xCorners = new int[corners];
 		yCorners = new int[corners];

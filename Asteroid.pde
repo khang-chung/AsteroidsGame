@@ -28,18 +28,18 @@ class Asteroid extends Floater{
 		corners = 6;
 		xCorners = new int[corners];
 		yCorners = new int[corners];
-		xCorners[0] = -16;
-		yCorners[0] = 24;
-		xCorners[1] = -32;
-		yCorners[1] = 0;
-		xCorners[2] = -16;
-		yCorners[2] = -24;
-		xCorners[3] = 16;
-		yCorners[3] = 24;
-		xCorners[4] = 32;
-		yCorners[4] = 0;
-		xCorners[5] = 16;
+		xCorners[1] = -16;
+		yCorners[1] = 24;
+		xCorners[0] = -32;
+		yCorners[0] = 0;
+		xCorners[5] = -16;
 		yCorners[5] = -24;
+		xCorners[2] = 16;
+		yCorners[2] = 24;
+		xCorners[3] = 32;
+		yCorners[3] = 0;
+		xCorners[4] = 16;
+		yCorners[4] = -24;
 
 	}
 	public void move(){

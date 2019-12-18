@@ -25,27 +25,21 @@ class Asteroid extends Floater{
 		myPointDirection = Math.random()*360;
 
 
-		corners = 9;
+		corners = 6;
 		xCorners = new int[corners];
 		yCorners = new int[corners];
-		xCorners[0] = -25;
-		yCorners[0] = 16;
-		xCorners[1] = -24;
-		yCorners[1] = 2;
-		xCorners[2] = -17;
-		yCorners[2] = -14;
-		xCorners[3] = 0;
-		yCorners[3] = -16;
-		xCorners[4] = 15;
-		yCorners[4] = -15;
-		xCorners[5] = 10;
-		yCorners[5] = 1;
-		xCorners[6] = 15;
-		yCorners[6] = 8;
-		xCorners[7] = 0;
-		yCorners[7] = 10;
-		xCorners[8] = -15;
-		yCorners[8] = 9;
+		xCorners[0] = -16;
+		yCorners[0] = 24;
+		xCorners[1] = -32;
+		yCorners[1] = 0;
+		xCorners[2] = -16;
+		yCorners[2] = -24;
+		xCorners[3] = 16;
+		yCorners[3] = 24;
+		xCorners[4] = 32;
+		yCorners[4] = 0;
+		xCorners[5] = 16;
+		yCorners[5] = -24;
 
 	}
 	public void move(){

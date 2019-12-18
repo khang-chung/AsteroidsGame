@@ -23,7 +23,7 @@ public void setup(){
   	bullets = 30;
   	level1 = true;
 
-	for(int j = 0; j < 15; j++){
+	for(int j = 0; j < 10; j++){
 		a.add(new Asteroid());
 	}
 	
@@ -189,7 +189,7 @@ public void mousePressed(){
 	 	ship.setDirectionY(0);
 	 	if(level1 == true){	
 	 		bullets = 30;
-	 		for(int j = 0; j < 15 - asize; j++){
+	 		for(int j = 0; j < 10 - asize; j++){
 	 			a.add(new Asteroid());
 	 		}
 		}

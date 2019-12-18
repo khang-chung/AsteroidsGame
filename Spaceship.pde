@@ -54,13 +54,29 @@ class Spaceship extends Floater{
       vertex(xCorners[nI], yCorners[nI]);
     }
     endShape(CLOSE);
-    
-    beginShape();
+
+    if(isAccelerating == true){
+    	noStroke();
+    	fill(255,100,100);
+    	int fCorners = 4;
+    	xCorners = new int[fCorners];
+    	yCorners = new int[fCorners];
+    	xCorners[0] = -15;
+    	yCorners[0] = 7;
+    	xCorners[1] = 0;
+    	yCorners[1] = 0;
+    	xCorners[2] = -15;
+    	yCorners[2] = -7;
+    	xCorners[3] = -10;
+    	yCorners[3] = 0;
+
+    	beginShape();
 	    for (int nI = 0; nI < corners; nI++)
 	    {
 	      vertex(xCorners[nI], yCorners[nI]);
 	    }
 	    endShape(CLOSE);
+	    
 	    fill(52, 204, 255);
 	    corners = 4;
 		xCorners = new int[corners];
@@ -81,23 +97,6 @@ class Spaceship extends Floater{
 	    }
 	    endShape(CLOSE);
 
-
-    if(isAccelerating == true){
-    	noStroke();
-    	fill(255,100,100);
-    	int fCorners = 4;
-    	xCorners = new int[fCorners];
-    	yCorners = new int[fCorners];
-    	xCorners[0] = -15;
-    	yCorners[0] = 7;
-    	xCorners[1] = 0;
-    	yCorners[1] = 0;
-    	xCorners[2] = -15;
-    	yCorners[2] = -7;
-    	xCorners[3] = -10;
-    	yCorners[3] = 0;
-
-    	
     }
     //"unrotate" and "untranslate" in reverse order
     rotate(-1*dRadians);

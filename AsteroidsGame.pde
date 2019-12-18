@@ -66,7 +66,7 @@ public void draw(){
 	fill(255);
 	textSize(30);
 	textAlign(CENTER);
-	text("Lives: "+lives,150,30);
+	text("Lives: "+lives,350,470);
 	text("Score: "+score,350,30);
 	textSize(20);
 	text("Bullets: "+bullets,50,450);
